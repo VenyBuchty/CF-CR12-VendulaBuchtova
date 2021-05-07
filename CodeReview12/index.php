@@ -17,7 +17,7 @@ if(mysqli_num_rows($result)  > 0) {
                             <div class="card-body">
                                 <h2 class="card-title fw-bolder text-center">'. $row["locationName"]. '</h2>
                                 <p class="card-text fw-bold">'. $row["description"] .'</p>
-                                <p class="card-text text-center">Price: '. $row["price"] .'€ per week</p>
+                                <h5 class="card-text text-center price">Price: '. $row["price"] .'€ per person/day</h5>
                                 </div><hr>
                 
                                 <div class="d-flex justify-content-center mb-2">
@@ -104,6 +104,10 @@ if(mysqli_num_rows($result)  > 0) {
 
             .joke {
                 color: #4e6978;
+            }
+
+            .price {
+                color: red;
             }
 
             span, .card-title {

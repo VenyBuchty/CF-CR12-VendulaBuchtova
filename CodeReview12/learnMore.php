@@ -141,8 +141,8 @@ if ($_GET['id']) {
                         <p class="card-text"><?php echo $moreInfo ?></p>
                     </div>
                     <ul class="list-group text-center">
-                        <li class="list-group-item"><p class="card-text fst-italic price">Price: <?php echo $price ?>€ per person/day</p></li>
-                        <li class="list-group-item"><p class="card-text fst-italic">Date from <?php echo $dateStart ?> to <?php echo $dateEnd ?></p></li>
+                        <p class="card-text">From <?php echo $dateStart ?> to <?php echo $dateEnd ?></p>
+                        <li class="list-group-item"><h4 class="card-text price">Price: <?php echo $price ?>€ per person/day</h4></li>
                     </ul>
                     <div class="card-body d-flex justify-content-around">
                         <a href="index.php" ><button class= 'btn btn-outline-secondary' type= "button"><i class="fas fa-reply"></i> Go Back</button></a>
