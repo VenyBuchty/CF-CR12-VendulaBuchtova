@@ -71,7 +71,7 @@ if ($_GET['id']) {
 
            fieldset {
                margin: auto;
-               width: 60% ;
+               width: 80% ;
            }       
 
            .card {
@@ -156,14 +156,15 @@ if ($_GET['id']) {
                    <tr>
                        <input type= "hidden" name= "id" value= "<?php echo $data['id'] ?>" />
                    </tr>
+                 </table>
+                 <div class="d-flex justify-content-center mb-4">
+                              <button class ='btn btn-create mx-2' type="submit">Insert Location</button>
+                            <a href="index.php" ><button class= 'btn btn-outline-secondary' type= "button"><i class="fas fa-reply"></i> Go Back</button></a>
+                          </div>
            </form>
        </fieldset>
        </div>
-       <div class="d-flex justify-content-center mb-4">
-                    <button class ='btn btn-create mx-2' type="submit">Insert Location</button>
-                  <a href="index.php" ><button class= 'btn btn-outline-secondary' type= "button"><i class="fas fa-reply"></i> Go Back</button></a>
-                </div>
        </div>
-       
+                  <?php require_once 'footer.php'?>
    </body> 
 </html>

@@ -44,7 +44,7 @@
 
            fieldset {
                margin: auto;
-               width: 60% ;
+               width: 80% ;
            }       
 
            .card {
@@ -126,14 +126,15 @@
                        <th>Picture: </th >
                        <td><input class= 'form-control' type="text"  name="picture" placeholder ="image url"/></td>
                    </tr>
-           </form>
-       </fieldset>
-       </div>
-       <div class="d-flex justify-content-center mb-4">
-                    <button class ='btn btn-create mx-2' type="submit">Insert Location</button>
-                  <a href="index.php" ><button class= 'btn btn-outline-secondary' type= "button"><i class="fas fa-reply"></i> Go Back</button></a>
+                </table> 
+                <div class="d-flex justify-content-center mb-4">
+                            <button class ='btn btn-create mx-2' type="submit">Insert Location</button>
+                        <a href="index.php" ><button class= 'btn btn-outline-secondary' type= "button"><i class="fas fa-reply"></i> Go Back</button></a>
                 </div>
-       </div>
-       
+                </div>
+            </form>
+            </fieldset>
+            </div>
+           <?php require_once 'footer.php'?>
    </body> 
 </html>

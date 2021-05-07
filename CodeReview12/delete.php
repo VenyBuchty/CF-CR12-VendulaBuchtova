@@ -106,7 +106,7 @@ if ($_GET['id']) {
                 <a href="index.php" ><button class= 'btn btn-outline-secondary' type= "button"><i class="fas fa-reply"></i> No, Go Back</button></a>
             </form> 
             </div>
-            
         </fieldset>
+
     </body>
 </html>

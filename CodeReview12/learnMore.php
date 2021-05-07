@@ -134,7 +134,6 @@ if ($_GET['id']) {
 
 
         <div class="offer-info shadow">
-
             <img src="<?php echo $picture ?>" class="card-img-top mt-4" alt="...">
                     <div class="card-body mt-3">
                         <h1 class="card-title fw-bolder text-center"><?php echo $locationName ?></h1>
@@ -155,6 +154,7 @@ if ($_GET['id']) {
 
         <div id="map" class="shadow"></div>
        </div>
+           <?php require_once 'footer.php'?>
        <script>
             var map;
             function initMap() {
