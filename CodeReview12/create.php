@@ -135,6 +135,6 @@
             </form>
             </fieldset>
             </div>
-           <?php require_once 'footer.php'?>
+
    </body> 
 </html>

@@ -1,5 +1,8 @@
-<?php require_once 'actions/db_connect.php';
+<?php 
+
+require_once 'actions/db_connect.php';
 require_once 'RESTful.php';
+
 
 $url = 'http://api.serri.codefactory.live/random/';
 $joke = curl_get($url);
@@ -92,16 +95,6 @@ if(mysqli_num_rows($result)  > 0) {
                 color: white;
             }
 
-/*             .btn_show:hover {
-                background-color: #a7d1d3;
-                color: black;
-                -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
-                -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
-                box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
-                font-weight: 600;
-                transform: scale(1.1);
-            } */
-
             .joke {
                 color: #4e6978;
             }
@@ -116,6 +109,7 @@ if(mysqli_num_rows($result)  > 0) {
             }
         </style>
     </head>
+    
     <body>
         <nav class="navbar navbar-expand-md navbar-dark">
             <div class="container-fluid">
@@ -142,12 +136,12 @@ if(mysqli_num_rows($result)  > 0) {
                 <h1>Be welcome in our Travel Agency</h1>
                 <h5> <span>Mount Everest Travel Agency</span>, based in Vienna Austria, has been your reliable tour operator for more than 20 years. <br> Specialized in tailor made group tours to <span>Europe</span>, we offer high quality services including hotels, restaurants, bus services, guided tours and other sightseeing programs suitable for youth groups, alumni, music groups or sports teams!</h5>
                 <hr>
-                <h5>Some joke for your to make today much better</h5>
+                <h5>Some joke that will instantly make your day better: </h5>
                 <h5><i class="fas fa-chevron-down"></i></h5>
-                <h6 class="fst-italic joke"><?php
+                <h6 class="fst-italic joke">
+                   <?php
                     echo $parsing->joke;
                     ?>
-                </h6>
         </div>
         
         <div class="container">
@@ -158,5 +152,30 @@ if(mysqli_num_rows($result)  > 0) {
     </div> 
     <?php require_once 'footer.php'?>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    
+    <script>
+
+ /*       document.getElementById("myButt").addEventListener("click", getJoke, false); //create an eventlistener to call getUsers() function when button clicked
+
+        function getJoke() {
+           const request = new XMLHttpRequest(); //create new request
+           request.open("GET", "https://cors-anywhere.herokuapp.com/http://api.serri.codefactory.live/random/"); //set request as a GET method connecting to users.php 
+           request.onload = function () {
+                if (this.status == 200) {
+                    let joke = JSON.parse(this.responseText); //data received is turned into JS objects
+                   console .log(joke) //see the array of objects in your console
+                    let output = ''; //create container variable 
+                   // users.forEach(user => { 
+                   for ( let i in joke) {
+                       output += joke[i]; //loop through each object and display their properties 
+                   }
+                   document .getElementById( 'jokes' ).innerHTML = output; //output results in div#users
+                    // });
+               }
+           }
+           request.send(); //send request
+       } */
+    </script>
     </body>
 </html>

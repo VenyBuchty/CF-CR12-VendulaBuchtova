@@ -165,6 +165,5 @@ if ($_GET['id']) {
        </fieldset>
        </div>
        </div>
-                  <?php require_once 'footer.php'?>
    </body> 
 </html>
